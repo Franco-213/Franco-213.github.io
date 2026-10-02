@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franco Castillo Baez · Analista de Datos</title>
+<meta name="description" content="Portafolio de Tu Nombre, analista de datos: SQL, Python, Power BI y Excel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<div class="top"><div class="top-inner"><div class="wrap">
+  <nav aria-label="Principal">
+    <strong>Franco Castillo</strong>
+    <ul>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#herramientas">Herramientas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Datos ordenados, decisiones más claras.</h1>
+      <p class="lead">Soy analista de datos. Trabajo con SQL, Python, Power BI y Excel, y construyo herramientas que automatizan las tareas repetitivas.</p>
+      <div class="cta">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#contacto">Contactarme</a>
+      </div>
+    </div>
+
+    <div class="sql" role="group" aria-label="Consulta SQL de ejemplo con mis datos de perfil">
+      <div class="sql-bar"><span>perfil.sql</span><button type="button" id="run">Ejecutar</button></div>
+<pre><span class="k">SELECT</span> nombre, rol, herramientas
+<span class="k">FROM</span>   analista
+<span class="k">WHERE</span>  disponible = <span class="k">TRUE</span>;</pre>
+      <div class="res run" id="res" aria-live="polite">
+        <div class="row"><span>nombre</span><span>Franco Castillo</span></div>
+        <div class="row"><span>rol</span><span>Analista de Datos</span></div>
+        <div class="row"><span>herramientas</span><span>SQL, Python, Power BI, Excel</span></div>
+        <div class="count">1 fila devuelta</div>
+      </div>
+    </div>
+  </header>
+</div></div></div>
+
+<main class="wrap">
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p class="sub">Lo que he construido y lo que viene en camino.</p>
+    <div class="grid-wrap" tabindex="0" role="region" aria-label="Tabla de proyectos">
+      <table>
+        <thead><tr><th>Proyecto</th><th>Qué hace</th><th>Herramientas</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>DataBloons</td>
+            <td>DataBloons es un sistema que reúne los datos que una empresa tiene dispersos en diferentes aplicaciones, archivos y bases de datos, los organiza y los centraliza en un solo lugar para que puedan ser utilizados fácilmente en herramientas como Power BI o Tableau, sin modificar ni eliminar los datos originales.</td>
+            <td>python, FastAPI, Pandas,PostgreSQL, SQLALchemy, MySQL, Excel, Power Bi, React, GitHub, Docker + Docker Compose.</td>
+            <td><span class="tag wip">en desarrollo</span></td>
+          </tr>
+          <tr>
+            <td>Sicosi</td>
+            <td>Sistema de contabilidad simplificado para microempresas. Mi proyecto de título.</td>
+            <!-- Completa aquí las tecnologías que usaste en Sicosi -->
+            <td>—</td>
+            <td><span class="tag ok">proyecto de título</span></td>
+          </tr>
+          <tr>
+            <td>Análisis de consumo y retail</td>
+            <td>Análisis de productos, clientes y precios con datos públicos.</td>
+            <td>SQL, Python, Power BI</td>
+            <td><span class="tag soon">próximamente</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="herramientas">
+    <h2>Herramientas</h2>
+    <p class="sub">Con qué trabajo para pasar del dato bruto al reporte.</p>
+    <div class="stack">
+      <div><h3>SQL</h3><p>Consultas para extraer y limpiar los datos.</p></div>
+      <div><h3>Python</h3><p>Análisis y automatización de procesos.</p></div>
+      <div><h3>Power BI</h3><p>Dashboards que se entienden a primera vista.</p></div>
+      <div><h3>Excel</h3><p>Punto de partida de muchos procesos que automatizo.</p></div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <p class="sub">Dónde estoy aplicando lo que aprendo.</p>
+    <div class="exp">
+      <h3>Práctica profesional · Tasker - Analista de datos</h3>
+      <p>Desarrollo de dashboards en Power BI para análisis de datos empresariales.</p>
+      <p>Procesamiento y limpieza de datos utilizando Excel.</p>
+      <p>Análisis de información para apoyar la toma de decisiones del equipo.</p>
+      <p>Organización y transformación de datos para visualización.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p class="sub">Si buscas a alguien para tu equipo de datos, escríbeme.</p>
+    <div class="contact">
+      <a class="btn primary" href="mailto:francocb@hotmail.cl">Enviar correo</a>
+      <a class="btn" href="https://github.com/Franco-213-Boss">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/franco-castillo213">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> Franco Castillo</div></footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
